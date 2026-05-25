@@ -1,0 +1,37 @@
+# フルオートシステム占いくん 販売LP
+
+GitHub Pagesでそのまま公開できる静的HTML LPです。
+
+## ファイル構成
+
+```text
+project-root
+├─ index.html
+├─ styles.css
+├─ main.js
+├─ README.md
+└─ assets/
+   └─ images/
+```
+
+## 公開手順
+
+1. ZIPを解凍します。
+2. `index.html` / `styles.css` / `main.js` / `README.md` / `assets` フォルダをリポジトリ直下にアップロードします。
+3. GitHubの `Settings` → `Pages` を開きます。
+4. `Deploy from a branch` を選択します。
+5. Branchを `main`、フォルダを `/root` に設定して保存します。
+6. 数分後に表示されるURLで確認します。
+
+## CTA
+
+LINE誘導先：
+https://lin.ee/Xi1eaPb
+
+案内ワード：
+`占いくん`
+
+## 注意
+
+価格、人数、通常価格、モニター条件は公開前に必ず最新情報に合わせて確認してください。
+成果や収益を保証する表現は入れていません。
