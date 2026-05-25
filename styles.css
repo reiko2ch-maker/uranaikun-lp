@@ -174,3 +174,88 @@ details p{margin:12px 0 0;color:var(--muted)}
 .sample-after-message strong{
   color:var(--gold);
 }
+
+
+/* Remaining-slot urgency banner */
+.slot-banner {
+  position: sticky;
+  top: 63px;
+  z-index: 45;
+  padding: 8px clamp(16px, 4vw, 52px);
+  background:
+    linear-gradient(90deg, rgba(255, 215, 106, .14), rgba(168, 85, 247, .18), rgba(56, 189, 248, .12)),
+    rgba(8, 3, 16, .92);
+  border-bottom: 1px solid rgba(255, 215, 106, .34);
+  backdrop-filter: blur(14px);
+}
+
+.slot-banner-inner {
+  width: min(var(--max), 100%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.slot-label {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 215, 106, .12);
+  border: 1px solid rgba(255, 215, 106, .36);
+  color: var(--gold);
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.slot-banner strong {
+  color: var(--gold);
+  font-size: clamp(18px, 2.5vw, 26px);
+  line-height: 1;
+  font-weight: 950;
+  text-shadow: 0 0 22px rgba(255, 215, 106, .32);
+}
+
+.slot-sub {
+  color: #fff;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.slot-mini-note {
+  margin: -4px 0 16px;
+  color: var(--gold);
+  font-size: 14px;
+  font-weight: 850;
+  line-height: 1.65;
+}
+
+.remaining-badge {
+  width: fit-content;
+  margin: 0 auto 12px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  color: #17070d;
+  background: linear-gradient(135deg, var(--gold), var(--gold2));
+  font-weight: 950;
+  box-shadow: 0 12px 34px rgba(255, 180, 43, .24);
+}
+
+@media(max-width: 560px) {
+  .slot-banner {
+    top: 0;
+    padding: 8px 12px;
+  }
+
+  .slot-banner-inner {
+    flex-wrap: wrap;
+    gap: 6px 8px;
+  }
+
+  .slot-sub {
+    width: 100%;
+    font-size: 12px;
+  }
+}
